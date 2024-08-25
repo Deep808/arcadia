@@ -52,8 +52,10 @@ const Moods = ({ movieName }: Props) => {
       <p className="my-[1em] text-[0.8em] lg:text-[1em] backdrop-blur-xl p-4 w-fit rounded-xl bg-white/5 transition-all duration-300 ease-linear">
         {isLoading ? (
           <l-dot-stream size="60" speed="2.5" color="white"></l-dot-stream>
-        ) : (
+        ) : moods ? (
           moods
+        ) : (
+          <p>Something went wrong!</p>
         )}
       </p>
     </div>

@@ -3,7 +3,7 @@ const getImagePath = (imagePath?: string, fullSize?: boolean) => {
     ? `https://image.tmdb.org/t/p/${
         fullSize ? "original" : "w500"
       }/${imagePath}`
-    : "https://wallpapercave.com/wp/wp9715880.jpg";
+    : "/noPoster.jpg";
 };
 
 export default getImagePath;

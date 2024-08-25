@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-// import { ThemeToggler } from "./ThemeToggler";
 import SearchInput from "./SearchInput";
 import GenreDropDown from "./GenreDropDown";
 import { FaRegHeart } from "react-icons/fa6";
@@ -15,7 +14,7 @@ function Header() {
           alt="Arcadia Logo"
           width={100}
           height={100}
-          className="cursor-pointer object-contain invert dark:invert w-18 lg:w-24 xl:w-28"
+          className="cursor-pointer object-contain invert dark:invert w-18 mb-1 lg:w-24 xl:w-28"
         />
       </Link>
 
@@ -25,7 +24,6 @@ function Header() {
         </Link>
         <GenreDropDown />
         <SearchInput />
-        {/* <ThemeToggler /> */}
       </div>
     </header>
   );
