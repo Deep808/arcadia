@@ -9,7 +9,6 @@ type Props = {
   params: {
     id: string;
   };
-  movieName: any;
 };
 
 const MoviePage = async ({ params: { id } }: Props) => {
