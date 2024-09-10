@@ -21,14 +21,14 @@ function CarousalBanner({ movies }: { movies: Movie[] }) {
     >
       <div className="flex relative">
         {movies.map((movie) => (
-          <div key={movie.id} className="flex-full min-w-0 relative">
+          <div key={movie.id} className="flex-full relative">
             <Image
               key={movie.id}
               src={getImagePath(movie.backdrop_path, true)}
               alt=""
               width={1920}
               height={1080}
-              className="z-0"
+              className="z-0 w-full"
             />
             <div className="hidden lg:inline absolute mt-0 top-0 pt-40 xl:pt-52 left-0 lg:mt-40 h-full w-full bg-gradient-to-r from-gray-900/90 via-transparent to-transparent p-10 z-[50] space-y-5 text-white">
               <h2 className="text-5xl font-bold max-w-xl">{movie.title}</h2>
