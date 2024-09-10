@@ -27,7 +27,7 @@ const MoviePage = async ({ params: { id } }: Props) => {
         alt={`Backdrop for ${movie.original_title}`}
         width={1920}
         height={1080}
-        className="min-h-screen object-cover"
+        className="min-h-screen object-cover w-full"
       />
 
       <div className="absolute bottom-[1em] lg:bottom-[10em] p-4 left-4">
